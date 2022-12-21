@@ -16,10 +16,10 @@ for (var i = 1; i <= totalNumberOfElements; i++) {
     AtomicArray.push(i);
     }
 
-function myFunction() {
+function atomicFinder() {
     var atom = document.getElementById("atomicNumber").value;
         if (atom === ""){
-             document.getElementById("demo").innerHTML = "Atomic Number cannot be a blank. Try again";
+             document.getElementById("name").innerHTML = "Atomic Number cannot be a blank. Try again";
         }
         else{
             var index = AtomicArray.indexOf(+atom);
@@ -29,12 +29,12 @@ function myFunction() {
             var state = stateFinder(index);
 
             if (+atom <= 118){
-                document.getElementById("demo").innerHTML = "The element with atomic number " + atom + " is " + element;
+                document.getElementById("name").innerHTML = "The element with atomic number " + atom + " is " + element;
                 document.getElementById("group").innerHTML = group;
                 document.getElementById("state").innerHTML = state;
             }
             else{
-                document.getElementById("demo").innerHTML = "Element with that atomic number does not exist yet. You could be the one to discover it :)";  
+                document.getElementById("name").innerHTML = "Element with that atomic number does not exist yet. You could be the one to discover it :)";  
                 document.getElementById("group").innerHTML = "";
                 document.getElementById("state").innerHTML = "";
             }
@@ -44,7 +44,7 @@ function myFunction() {
 function elementFinder() {
     var elem = document.getElementById("elementName").value;
     if (elem === ""){
-        document.getElementById("demo").innerHTML = "Element cannot be a blank. Try again";
+        document.getElementById("name").innerHTML = "Element cannot be a blank. Try again";
     }
     else{
         var index = ElementArray.indexOf(elem);
@@ -54,12 +54,12 @@ function elementFinder() {
         var state = stateFinder(index);
 
         if(elem = ElementArray[index]){
-            document.getElementById("demo").innerHTML = elem + "'s atomic number is " + atom;
+            document.getElementById("name").innerHTML = elem + "'s atomic number is " + atom;
             document.getElementById("group").innerHTML = group;
             document.getElementById("state").innerHTML = state;
         }
     else{
-        document.getElementById("demo").innerHTML = " That element does not exist yet. You could be the one to discover it :)";
+        document.getElementById("name").innerHTML = " That element does not exist yet. You could be the one to discover it :)";
         document.getElementById("group").innerHTML = "";
         document.getElementById("state").innerHTML = "";
         }
