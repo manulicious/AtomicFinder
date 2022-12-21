@@ -1,0 +1,29 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="utf-8" />
+        <title>Atomic Finder</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/dark.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head> 
+        <body>
+            <h1>Atomic/Element Finder</h1>
+            <p>Enter any Atomic number from 1 - 118 to find the Element:</p>
+            <label for="atomicNumber">Atomic Number:</label>
+            <input type ="text" id = "atomicNumber" name = "atomicNumber">
+            <button onclick="myFunction()">Search w/ Atomic Number</button>
+
+            <br>
+            <h4>--OR--</h4>
+
+            <p>Enter any valid Element Name:</p>
+            <label for="elementName">Element Name:</label>
+            <input type ="text" id = "elementName" name = "elementName">
+            <button onclick="elementFinder()">Search w/ Element Name</button>
+
+            <p id="demo"></p>
+            <p id="group"></p>
+            <p id="state"></p>
+            <script type="text/javascript" src="app.js"></script>
+        </body>
+</html>
